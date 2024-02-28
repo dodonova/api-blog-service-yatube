@@ -18,6 +18,7 @@ git clone git@github.com:dodonova/api-blog-service-yatube.git
 ```
 cd api_final_yatube
 ```
+В этой же папке создать файл `.env` в котором разместить информацию о переменных окружения. Пример в файле [.env.example](./.env.example)
 
 Cоздать и активировать виртуальное окружение:
 
