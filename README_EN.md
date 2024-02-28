@@ -19,6 +19,10 @@ git clone git@github.com:dodonova/api-blog-service-yatube.git
 cd api_final_yatube
 ```
 
+In the same folder create `.env` file and put there information about environment variables. 
+
+Example in the file [.env.example](./.env.example)    
+
 Create and activate a virtual environment:
 
 ```
