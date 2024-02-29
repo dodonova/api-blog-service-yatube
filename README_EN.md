@@ -16,7 +16,7 @@ git clone git@github.com:dodonova/api-blog-service-yatube.git
 ```
 
 ```
-cd api_final_yatube
+cd api-blog-service-yatube
 ```
 
 In the same folder create `.env` file and put there information about environment variables. 
