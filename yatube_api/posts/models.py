@@ -3,8 +3,11 @@ from django.db import models
 
 User = get_user_model()
 
-
 class Group(models.Model):
+    """
+    Model representing a group.
+    """
+
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
     description = models.TextField()
@@ -14,6 +17,10 @@ class Group(models.Model):
 
 
 class Post(models.Model):
+    """
+    Model representing a post.
+    """
+
     text = models.TextField()
     pub_date = models.DateTimeField('Дата публикации', auto_now_add=True)
     author = models.ForeignKey(
@@ -30,6 +37,10 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """
+    Model representing a comment.
+    """
+
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='comments')
     post = models.ForeignKey(
@@ -40,6 +51,10 @@ class Comment(models.Model):
 
 
 class Follow(models.Model):
+    """
+    Model representing a follow relationship between users.
+    """
+
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='followers'
     )
